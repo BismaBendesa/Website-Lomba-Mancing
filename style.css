@@ -1,0 +1,45 @@
+.font-beau {
+  font-family: "Beau Rivage", cursive;
+  font-weight: 400;
+  letter-spacing: 6%;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+
+.font-helvetica-reg {
+  font-family: "Helvetica", sans-serif;
+  src: url('/fonts/Helvetica.ttf') format('truetype');;
+  font-weight: 400;
+}
+
+.font-helvetica-bol {
+  font-family: "Helvetica Bold", sans-serif;
+  src: url('/fonts/Helvetica-Bold.ttf') format('truetype');;
+  font-weight: 700;
+}
+
+.font-helvetica-obl {
+  font-family: "Helvetica Oblique", sans-serif;
+  src: url('/fonts/Helvetica-Oblique.ttf') format('truetype');;
+  font-weight: 400;
+}
+
+.font-helvetica-obbol {
+  font-family: "Helvetica Oblique Bold", sans-serif;
+  src: url('/fonts/Helvetica-BoldOblique.ttf') format('truetype');;
+  font-weight: 700;
+}
+
+.my-gradient {
+  /* Paste the code you copied from Figma here */
+  background-image:url('./images/water-splash.png'),  linear-gradient(to right, rgba(255, 174, 167,.7) 0%, rgba(255, 244, 123, .7) 67%);
+  background-repeat: no-repeat, no-repeat;
+  /* background-position: right; */
+}
+
+.peraturan-gradient{
+  background: linear-gradient(to right, rgba(253, 130, 115, .3) 0%, rgba(255, 236, 22, .3) 100%);
+}

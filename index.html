@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer>
+      tailwind.config = {
+        theme: {
+          extend: {
+            dropShadow:{
+              button: '0 4px 4px rgba(237, 15, 74, .2)'
+            },
+            keyframes: {
+                wiggle: {
+                  '0%, 100%': { transform: 'rotate(-3deg)' },
+                  '50%': { transform: 'rotate(3deg)' }
+                }
+              },
+            animation: {
+              wiggle: 'wiggle 3.5s ease-in-out infinite'
+            },
+            colors:{
+              'custom-red': '#ED0F4A',
+            },
+            fontFamily: {
+              'satoshi': ['Satoshi', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+    
+  </head>
+  <body class="max-w-[1920px] w-full mx-auto">
+    <nav class="font-bebas tracking-wider flex gap-6 lg:gap-14 lg:ml-[60px] my-5 lg:ml-15 mx-auto lg:mx-0 justify-center lg:justify-start items-center lg:text-[20px] text-xl">
+      <a href="">Informasi Kegiatan</a>
+      <a href="">Peraturan</a>
+      <a href="">Hadiah</a>
+    </nav>
+    
+    <div class="hero lg:pl-[60px] my-gradient py-6 lg:mt-5 relative min-h-[312px] px-4 bg-auto lg:bg-auto md:bg-right bg-[-20%_-20%] overflow-x-clip">
+      <h3 class="font-beau lg:text-4xl text-3xl tracking-wider lg:mb-4 mb-1 lg:mt-5">Tukad pendem</h3>
+      <h1 class="font-bebas lg:text-[72px] leading-[1.2] tracking-widest lg:max-w-[478px] max-w-[360px] mb-4 text-[48px] ">Lomba Mancing Air Deras</h1>
+      <p class="font-helvetica-reg lg:text-[20px] text-base">Banjar Dajan Tangluk Kesiman</p>
+      <img src="./images/lele.png" alt="ikan-lele" class="absolute md:right-0 md:top-[-60px] w-[343px] md:w-auto bottom-[-80px] right-[-80px]">
+    </div>
+
+    <div class="sponsor mt-[100px] px-4 lg:px-12">
+      <h2 class="font-bebas tracking-wider text-[28px] lg:text-[32px] text-center mb-5 lg:text-left">Didukung Oleh:</h2>
+      <div class="sponsors grid grid-cols-4 lg:grid-cols-12 gap-4 lg:gap-8 items-center">
+        <img src="./images/sponsors/honda.png" alt="honda" class="content-center">
+        <img src="./images/sponsors/hypermart.png" alt="hypermart">
+      </div>
+    </div>
+
+    <div class="wrapper lg:grid lg:grid-cols-2 lg:gap-14 lg-items-center px-4 lg:px-12 mt-[64px]">
+      <div class="informasi-kegiatan">
+        <h2 class="font-bebas tracking-wider text-[28px] lg:text-[32px] text-center lg:text-left mb-2">Informasi Kegiatan</h2>
+        <table class="table-auto w-full h-fit">
+            <tbody>
+              <tr class="border-b border-[#DBDBDB] py-2">
+                <th class="py-4 text-left font-medium">Penyelenggara </th>
+                <td class="pl-10 py-4">Banjar Dajan Tangluk Merana</td>
+              </tr>
+              <tr class="border-b border-[#DBDBDB] py-2">
+                <th class="py-4 text-left font-medium">Tanggal</th>
+                <td class="pl-10 py-4">22 Februari 2026</td>
+              </tr>
+              <tr class="border-b border-[#DBDBDB] py-2">
+                <th class="py-4 text-left font-medium">Lokasi</th>
+                <td class="pl-10 py-4">Tukad Pendem, Jl. Surabi, Kesiman Denpasar.</td>
+              </tr>
+              <tr class="border-b border-[#DBDBDB] py-2">
+                <th class="py-4 text-left font-medium">Biaya</th>
+                <td class="pl-10 py-4">Rp. 60.000/ kupon</td>
+              </tr>
+              <tr class="border-b border-[#DBDBDB] py-2">
+                <th class="py-4 text-left font-medium">Kontak</th>
+                <td class="pl-10 py-4">-</td>
+              </tr> 
+              <tr class="border-b border-[#DBDBDB] py-2">
+                <th class="py-4 text-left font-medium">Kategori</th>
+                <td class="pl-10 py-4">
+                  <ul>
+                    <li>1. Ikan Berpita (Master)</li>
+                    <li>2. Hasil Tangkapan Terberat</li>
+                  </ul>
+                </td>
+              </tr> 
+            </tbody>
+          </table>
+      </div>
+  
+      <div class="hadiah">
+        <h2 class="font-bebas tracking-wider text-[28px] lg:text-[32px] text-center lg:text-left mb-2 mt-8 lg:mt-0">Hadiah</h2>
+        <div class="informasi bg-[#FFFEE3] px-4 py-2 mb-4">
+          <p class="font-helvetica-obl italic">Informasi:</p>
+          <p class="font-helvetica-obbol italic">Hadiah ini adalah untuk kategori tangkapan terberat. Terdapat juga puluhan hadiah doorprize lainnya.</p>
+        </div>
+        <div class="juara flex gap-4 items-center mb-4 justify-center lg:justify-start flex-col lg:flex-row">
+          <img src="./images/Juara-1.png" alt="Juara-1">
+          <div>
+            <h4 class="lg:text-[24px] text-xl font-helvetica-bol mb-1 text-center lg:text-left">Juara 1</h4>
+            <p class="lg:text-base font-helvetica-reg">Uang Tunai: 2.000.0000</p>
+          </div>
+        </div>
+        <div class="juara flex gap-4 items-center mb-4 justify-center lg:justify-start flex-col lg:flex-row">
+          <img src="./images/Juara-2.png" alt="Juara-2">
+          <div>
+            <h4 class="lg:text-[24px] text-xl font-helvetica-bol mb-1 text-center lg:text-left">Juara 2</h4>
+            <p class="lg:text-base font-helvetica-reg">Uang Tunai: 1.500.0000</p>
+          </div>
+        </div>
+        <div class="juara flex gap-4 items-center justify-center lg:justify-start flex-col lg:flex-row">
+          <img src="./images/Juara-3.png" alt="Juara-3">
+          <div>
+            <h4 class="lg:text-[24px] text-xl font-helvetica-bol mb-1 text-center lg:text-left">Juara 3</h4>
+            <p class="lg:text-base font-helvetica-reg">Uang Tunai: 1.000.0000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="peraturan px-4 lg:px-12 mt-[64px] peraturan-gradient py-2 mb-10 lg:py-6">
+      <h2 class="font-bebas tracking-wider text-[28px] lg:text-[32px] text-center lg:text-left mb-2 mt-8 lg:mt-0">Peraturan</h2>
+      <ol class="list-decimal list-inside lg:leading-[2.5] leading-[2] text-justify">
+        <li class="mb-3 lg:mb-0">Pemancing hanya diperkenankan memakai satu alat pancing dengan memasang pita dirule dan memasang nomor dada yang sah di dada pemancing.</li>
+        <li class="mb-3 lg:mb-0">Pemancing hanya memakai satu mata kail bukan mata tiga atau jangkar.</li>
+        <li class="mb-3 lg:mb-0">Pemancing tidak diperkenankan meletakkan alat peneduh di aliran sungai seperti ranting, daun pisang, pakis, rumpun padi dll.</li>
+        <li class="mb-3 lg:mb-0">Pemancing tidak diperbolehkan memakai alat tabur baik padat maupun cair ke aliran sungai.</li>
+        <li class="mb-3 lg:mb-0">Pemancing menurunkan pancingan setelah penebar naik dari aliran sungai dan harus sesuai dengan aba-aba dari panitia.</li>
+        <li class="mb-3 lg:mb-0">Jika ada satu ikan terkena dua mata pancing atau lebih, maka yang berhak atas ikan tersebut adalah mata pancing yang pertama mengenai ikan yang tentunya dibarengi dengan hentakan.</li>
+        <li class="mb-3 lg:mb-0">Pada saat menaikkan ikan tidak blieh menggunakan alat bantu sperti sau, garut. Hanya menggunakan tangan dan tidak blieh dibantu lieh pemancing lainnya serta tidak blieh turun ke sungai.</li>
+        <li class="mb-3 lg:mb-0">Jika ada ikan naik sama besar maka yang naik dan tercatat panitia terlebih dahulu menjadi posisi yang lebih utama.</li>
+        <li class="mb-3 lg:mb-0">Lomba dilaksanakan selama 90 menit atau 1 jam 30 menit dengan penebaran ikan sebanyak 2 kali.</li>
+        <li class="mb-3 lg:mb-0">Tanpa mengurangi rasa hormat keputusan tertinggi berada di tangan panitia yang tidak bisa diganggu gugat.</li>
+      </ol>
+    </div>
+  </body>
+</html>
