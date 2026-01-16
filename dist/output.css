@@ -234,6 +234,15 @@
   .min-h-\[312px\] {
     min-height: 312px;
   }
+  .w-\[40px\] {
+    width: 40px;
+  }
+  .w-\[56px\] {
+    width: 56px;
+  }
+  .w-\[90px\] {
+    width: 90px;
+  }
   .w-\[343px\] {
     width: 343px;
   }
@@ -329,9 +338,6 @@
     --motion-rotate-out-animation: motion-rotate-out calc(var(--motion-rotate-duration, var(--motion-duration)) * var(--motion-rotate-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-rotate-timing, var(--motion-timing)) var(--motion-rotate-delay, var(--motion-delay)) both;
     animation: var(--motion-scale-out-animation), var(--motion-translate-out-animation), var(--motion-rotate-out-animation), var(--motion-filter-out-animation), var(--motion-opacity-out-animation), var(--motion-background-color-out-animation), var(--motion-text-color-out-animation);
   }
-  .animate-pulse {
-    animation: var(--animate-pulse);
-  }
   .resize {
     resize: both;
   }
@@ -361,6 +367,12 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .self-center {
+    align-self: center;
+  }
+  .justify-self-center {
+    justify-self: center;
   }
   .overflow-x-clip {
     overflow-x: clip;
@@ -482,11 +494,15 @@
   .motion-delay-\[2500ms\] {
     --motion-delay: 2500ms;
   }
-  .motion-delay-\[3000ms\] {
-    --motion-delay: 3000ms;
-  }
   .motion-duration-1000 {
     --motion-duration: 1000ms;
+  }
+  .hover\:text-\[\#FFF7A2\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #FFF7A2;
+      }
+    }
   }
   .md\:top-\[-60px\] {
     @media (width >= 48rem) {
